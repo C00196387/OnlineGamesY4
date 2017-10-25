@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\pixir\desktop\college stuff\online-gaming\lab 2\lab_2\main.cpp(124): warning C4018: '<': signed/unsigned mismatch
+  Lab_2.vcxproj -> C:\Users\pixir\Desktop\College Stuff\Online-Gaming\Lab 2\Lab_2\Debug\Lab_2.exe
+  Lab_2.vcxproj -> C:\Users\pixir\Desktop\College Stuff\Online-Gaming\Lab 2\Lab_2\Debug\Lab_2.pdb (Partial PDB)

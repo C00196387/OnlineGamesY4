@@ -1,0 +1,5 @@
+Lab 2
+
+Based on the TcpListener.cpp and TcpListener.h in folder Reference.code/QOTDServer, write the server-side program supporting multiple client chatting. Putty should be used to test the code. 
+
+Bonus: run the code on two or even more physical machines.

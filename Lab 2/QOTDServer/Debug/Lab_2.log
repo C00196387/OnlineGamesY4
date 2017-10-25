@@ -1,0 +1,4 @@
+﻿  TcpListener.cpp
+c:\users\pixir\desktop\college stuff\online-gaming\lab 2\qotdserver\tcplistener.cpp(147): warning C4018: '<': signed/unsigned mismatch
+  Lab_2.vcxproj -> C:\Users\pixir\Desktop\College Stuff\Online-Gaming\Lab 2\QOTDServer\Debug\Lab_2.exe
+  Lab_2.vcxproj -> C:\Users\pixir\Desktop\College Stuff\Online-Gaming\Lab 2\QOTDServer\Debug\Lab_2.pdb (Partial PDB)
