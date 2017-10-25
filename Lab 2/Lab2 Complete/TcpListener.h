@@ -17,7 +17,7 @@
 class CTcpListener;
 
 // Callback to data received
-typedef void(*MessageRecievedHandler)(CTcpListener* listener, int socketId, std::string msg);
+typedef void(*MessageRecievedHandler)(CTcpListener* listener, int socketId, std::string msg, std::string sock);
 
 class CTcpListener
 {

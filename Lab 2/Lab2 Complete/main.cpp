@@ -6,14 +6,14 @@
 
 using namespace std;
 
-void Listener_MessageReceived(CTcpListener* listener, int client, string msg);
+void Listener_MessageReceived(CTcpListener* listener, int client, string msg, std::string sock);
 
 // This is kinda bad because it's global.
 CQotd quotes("wisdom.txt");
 
 void main()
 {
-	CTcpListener server("127.0.0.1", 54010, Listener_MessageReceived);
+	CTcpListener server("149.153.106.162", 5050, Listener_MessageReceived);
 	
 	if (server.Init())
 	{
@@ -21,7 +21,7 @@ void main()
 	}
 }
 
-void Listener_MessageReceived(CTcpListener* listener, int client, string msg)
+void Listener_MessageReceived(CTcpListener* listener, int client, string msg, std::string sock)
 {
 
 	if (msg.find("$QUOTE") != std::string::npos)
@@ -36,7 +36,7 @@ void Listener_MessageReceived(CTcpListener* listener, int client, string msg)
 
 		msg.erase(i, holder.length());
 
-		std::string holder_ = to_string(client) + " : " + msg;
+		std::string holder_ = sock + " : " + msg;
 
 		listener->Send(client, holder_);
 	}
